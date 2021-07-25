@@ -27,11 +27,8 @@ class LoginController: UIViewController {
     
     private let emailTextField = CustomTextField(placeholder: "Email")
     
-    private let passwordTextField: UITextField = {
-        let tf = CustomTextField(placeholder: "Password")
-        tf.isSecureTextEntry = true
-        return tf
-    }()
+    private let passwordTextField = CustomTextField(placeholder: "Password", isSecure: true)
+
     
     private let loginButton: UIButton = {
         let button = UIButton(type: .system)
@@ -104,11 +101,5 @@ class LoginController: UIViewController {
         
     }
     
-    func configureGradientLayer() {
-        let gradient = CAGradientLayer()
-        gradient.colors = [UIColor.systemPurple.cgColor, UIColor.systemPink.cgColor]
-        gradient.locations = [0,1]
-        view.layer.addSublayer(gradient)
-        gradient.frame =  view.frame
-    }
+
 }
