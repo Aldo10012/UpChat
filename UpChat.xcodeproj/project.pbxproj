@@ -16,6 +16,7 @@
 		636F70BE26A22FE700182E0E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636F70BD26A22FE700182E0E /* SceneDelegate.swift */; };
 		636F70C526A22FE700182E0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 636F70C426A22FE700182E0E /* Assets.xcassets */; };
 		636F70C826A22FE700182E0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 636F70C626A22FE700182E0E /* LaunchScreen.storyboard */; };
+		637ECC3926E84D5000773A37 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637ECC3826E84D5000773A37 /* LoginViewModel.swift */; };
 		63AF1BB226A23E2A0026ECF3 /* ConversationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AF1BB126A23E2A0026ECF3 /* ConversationsController.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		636F70C426A22FE700182E0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		636F70C726A22FE700182E0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		636F70C926A22FE700182E0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		637ECC3826E84D5000773A37 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		63AF1BB126A23E2A0026ECF3 /* ConversationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,6 +117,7 @@
 		63AF1BAC26A23BEF0026ECF3 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				637ECC3826E84D5000773A37 /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				63AF1BB226A23E2A0026ECF3 /* ConversationsController.swift in Sources */,
 				6364615726AC8C90008D448B /* RegistrationController.swift in Sources */,
 				636F70BE26A22FE700182E0E /* SceneDelegate.swift in Sources */,
+				637ECC3926E84D5000773A37 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
