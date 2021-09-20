@@ -17,6 +17,7 @@
 		636F70C526A22FE700182E0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 636F70C426A22FE700182E0E /* Assets.xcassets */; };
 		636F70C826A22FE700182E0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 636F70C626A22FE700182E0E /* LaunchScreen.storyboard */; };
 		637ECC3926E84D5000773A37 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637ECC3826E84D5000773A37 /* LoginViewModel.swift */; };
+		637F29A226F927B100FC83DB /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F29A126F927B100FC83DB /* RegistrationViewModel.swift */; };
 		63AF1BB226A23E2A0026ECF3 /* ConversationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AF1BB126A23E2A0026ECF3 /* ConversationsController.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		636F70C726A22FE700182E0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		636F70C926A22FE700182E0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		637ECC3826E84D5000773A37 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		637F29A126F927B100FC83DB /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		63AF1BB126A23E2A0026ECF3 /* ConversationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +92,15 @@
 			path = UpChat;
 			sourceTree = "<group>";
 		};
+		637F29A326F927BE00FC83DB /* Authenitcation */ = {
+			isa = PBXGroup;
+			children = (
+				6364615B26AC9BB2008D448B /* InputContainerView.swift */,
+				6364615D26ACA03F008D448B /* CustomTextField.swift */,
+			);
+			path = Authenitcation;
+			sourceTree = "<group>";
+		};
 		63AF1BA926A23BCD0026ECF3 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				637ECC3826E84D5000773A37 /* LoginViewModel.swift */,
+				637F29A126F927B100FC83DB /* RegistrationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -125,8 +137,7 @@
 		63AF1BAD26A23BFC0026ECF3 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				6364615B26AC9BB2008D448B /* InputContainerView.swift */,
-				6364615D26ACA03F008D448B /* CustomTextField.swift */,
+				637F29A326F927BE00FC83DB /* Authenitcation */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -212,6 +223,7 @@
 				6364615C26AC9BB2008D448B /* InputContainerView.swift in Sources */,
 				6364615526AC8C83008D448B /* LoginController.swift in Sources */,
 				6364615E26ACA03F008D448B /* CustomTextField.swift in Sources */,
+				637F29A226F927B100FC83DB /* RegistrationViewModel.swift in Sources */,
 				63AF1BB226A23E2A0026ECF3 /* ConversationsController.swift in Sources */,
 				6364615726AC8C90008D448B /* RegistrationController.swift in Sources */,
 				636F70BE26A22FE700182E0E /* SceneDelegate.swift in Sources */,
