@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4BCB1704D8754593714FDCB0 /* Pods_UpChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6951FAF7128B104BF1E8BDA /* Pods_UpChat.framework */; };
 		6364615526AC8C83008D448B /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6364615426AC8C83008D448B /* LoginController.swift */; };
 		6364615726AC8C90008D448B /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6364615626AC8C90008D448B /* RegistrationController.swift */; };
 		6364615A26AC903F008D448B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6364615926AC903F008D448B /* Extensions.swift */; };
@@ -19,9 +20,11 @@
 		637ECC3926E84D5000773A37 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637ECC3826E84D5000773A37 /* LoginViewModel.swift */; };
 		637F29A226F927B100FC83DB /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F29A126F927B100FC83DB /* RegistrationViewModel.swift */; };
 		63AF1BB226A23E2A0026ECF3 /* ConversationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AF1BB126A23E2A0026ECF3 /* ConversationsController.swift */; };
+		63F36D60270B94F300D5601E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 63F36D5F270B94F300D5601E /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27FF52BEEE9A6E7C587FD2CB /* Pods-UpChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UpChat.release.xcconfig"; path = "Target Support Files/Pods-UpChat/Pods-UpChat.release.xcconfig"; sourceTree = "<group>"; };
 		6364615426AC8C83008D448B /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		6364615626AC8C90008D448B /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		6364615926AC903F008D448B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -36,6 +39,9 @@
 		637ECC3826E84D5000773A37 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		637F29A126F927B100FC83DB /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		63AF1BB126A23E2A0026ECF3 /* ConversationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsController.swift; sourceTree = "<group>"; };
+		63F36D5F270B94F300D5601E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		6660E08001DAA61E5EB030D5 /* Pods-UpChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UpChat.debug.xcconfig"; path = "Target Support Files/Pods-UpChat/Pods-UpChat.debug.xcconfig"; sourceTree = "<group>"; };
+		A6951FAF7128B104BF1E8BDA /* Pods_UpChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UpChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BCB1704D8754593714FDCB0 /* Pods_UpChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +70,8 @@
 			children = (
 				636F70BA26A22FE700182E0E /* UpChat */,
 				636F70B926A22FE700182E0E /* Products */,
+				E471FF0058630266E93B110E /* Pods */,
+				D5B8E2A4EE0E476AB6E98754 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +97,7 @@
 				636F70C426A22FE700182E0E /* Assets.xcassets */,
 				636F70C626A22FE700182E0E /* LaunchScreen.storyboard */,
 				636F70C926A22FE700182E0E /* Info.plist */,
+				63F36D5F270B94F300D5601E /* GoogleService-Info.plist */,
 			);
 			path = UpChat;
 			sourceTree = "<group>";
@@ -149,6 +159,24 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		D5B8E2A4EE0E476AB6E98754 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6951FAF7128B104BF1E8BDA /* Pods_UpChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E471FF0058630266E93B110E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6660E08001DAA61E5EB030D5 /* Pods-UpChat.debug.xcconfig */,
+				27FF52BEEE9A6E7C587FD2CB /* Pods-UpChat.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -156,9 +184,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 636F70CC26A22FE700182E0E /* Build configuration list for PBXNativeTarget "UpChat" */;
 			buildPhases = (
+				E59C1D9B2E602734BB1903B7 /* [CP] Check Pods Manifest.lock */,
 				636F70B426A22FE600182E0E /* Sources */,
 				636F70B526A22FE600182E0E /* Frameworks */,
 				636F70B626A22FE600182E0E /* Resources */,
+				D9A814C033281AA81726BA35 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -208,10 +238,53 @@
 			files = (
 				636F70C826A22FE700182E0E /* LaunchScreen.storyboard in Resources */,
 				636F70C526A22FE700182E0E /* Assets.xcassets in Resources */,
+				63F36D60270B94F300D5601E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D9A814C033281AA81726BA35 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UpChat/Pods-UpChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UpChat/Pods-UpChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UpChat/Pods-UpChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E59C1D9B2E602734BB1903B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UpChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		636F70B426A22FE600182E0E /* Sources */ = {
@@ -363,6 +436,7 @@
 		};
 		636F70CD26A22FE700182E0E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6660E08001DAA61E5EB030D5 /* Pods-UpChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -372,7 +446,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Make-School.UpChat";
+				PRODUCT_BUNDLE_IDENTIFIER = Alberto.UpChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -381,6 +455,7 @@
 		};
 		636F70CE26A22FE700182E0E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27FF52BEEE9A6E7C587FD2CB /* Pods-UpChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -390,7 +465,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Make-School.UpChat";
+				PRODUCT_BUNDLE_IDENTIFIER = Alberto.UpChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
