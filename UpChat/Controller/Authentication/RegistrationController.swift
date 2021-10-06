@@ -126,6 +126,7 @@ class RegistrationController: UIViewController {
                             return
                         }
                         print("DEBUG: did create user...")
+                        self.dismiss(animated: true, completion: nil)
                     }
                 }
             }
