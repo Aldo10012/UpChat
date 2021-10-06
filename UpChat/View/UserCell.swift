@@ -10,7 +10,7 @@ import UIKit
 class UserCell: UITableViewCell {
     
     // MARK: - Preoperties
-    private let profileImageView: UIImageView = {
+    let profileImageView: UIImageView = {
         let iv = UIImageView()
         iv.backgroundColor = .systemPurple
         iv.contentMode = .scaleToFill
@@ -18,14 +18,14 @@ class UserCell: UITableViewCell {
         return iv
     }()
     
-    private let usernameLabel: UILabel = {
+    let usernameLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 14)
         label.text = "Spider Man"
         return label
     }()
     
-    private let fullnameLabel: UILabel = {
+    let fullnameLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 14)
         label.textColor = .lightGray

@@ -12,11 +12,19 @@ struct Service {
     
     
     
-    static func fetchUsers() {
+    static func fetchUsers(completion: @escaping([User]) -> Void) {
+        var users = [User]()
+        
         Firestore.firestore().collection("users").getDocuments { snapshot, error in
             print(snapshot?.documents)
             snapshot?.documents.forEach({ document in
-                print(document.data())
+                let dictionary = document.data()
+                let user = User(dictinary: dictionary)
+                
+                print("DEBUG: Username is: \(user.username)")
+                print("DEBUG: Fullname is: \(user.fullname)")
+                users.append(user)
+                completion(users)
             })
         }
         
