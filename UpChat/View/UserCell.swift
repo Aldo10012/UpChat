@@ -6,10 +6,16 @@
 //
 
 import UIKit
+import SDWebImage
 
 class UserCell: UITableViewCell {
     
     // MARK: - Preoperties
+    
+    var user: User? {
+        didSet { configure() }
+    }
+    
     let profileImageView: UIImageView = {
         let iv = UIImageView()
         iv.backgroundColor = .systemPurple
@@ -56,6 +62,15 @@ class UserCell: UITableViewCell {
         stack.spacing = 2
         addSubview(stack)
         stack.centerY(inView: self, leftAnchor: profileImageView.rightAnchor, paddingLeft: 12)
+    }
+    
+    func configure() {
+        guard let user = user else { return }
+        fullnameLabel.text = user.fullname
+        usernameLabel.text = user.username
+        
+        guard let url = URL(string: user.profileImageURL) else { return }
+        profileImageView.sd_setImage(with: url)
     }
     
     required init?(coder: NSCoder) {

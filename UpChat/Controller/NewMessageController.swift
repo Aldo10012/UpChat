@@ -57,10 +57,8 @@ extension NewMessageController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! UserCell
-        cell.usernameLabel.text = users[indexPath.row].username.capitalized
-        cell.fullnameLabel.text = users[indexPath.row].fullname
-        let img = users[indexPath.row].profileImageURL
-        cell.profileImageView.image = UIImage(named: img)
+        
+        cell.user = users[indexPath.row]
         
         return cell
     }
