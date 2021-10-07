@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4BCB1704D8754593714FDCB0 /* Pods_UpChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6951FAF7128B104BF1E8BDA /* Pods_UpChat.framework */; };
+		6348FB02270F7790001E65B9 /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6348FB01270F7790001E65B9 /* ChatController.swift */; };
 		6364615526AC8C83008D448B /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6364615426AC8C83008D448B /* LoginController.swift */; };
 		6364615726AC8C90008D448B /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6364615626AC8C90008D448B /* RegistrationController.swift */; };
 		6364615A26AC903F008D448B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6364615926AC903F008D448B /* Extensions.swift */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		27FF52BEEE9A6E7C587FD2CB /* Pods-UpChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UpChat.release.xcconfig"; path = "Target Support Files/Pods-UpChat/Pods-UpChat.release.xcconfig"; sourceTree = "<group>"; };
+		6348FB01270F7790001E65B9 /* ChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
 		6364615426AC8C83008D448B /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		6364615626AC8C90008D448B /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		6364615926AC903F008D448B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				6364615326AC8C0E008D448B /* Authentication */,
 				63AF1BB126A23E2A0026ECF3 /* ConversationsController.swift */,
 				6385EEB2270E13720086671F /* NewMessageController.swift */,
+				6348FB01270F7790001E65B9 /* ChatController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				636F70BC26A22FE700182E0E /* AppDelegate.swift in Sources */,
 				6385EEB5270E19590086671F /* UserCell.swift in Sources */,
 				6385EEB9270E22860086671F /* Service.swift in Sources */,
+				6348FB02270F7790001E65B9 /* ChatController.swift in Sources */,
 				6364615A26AC903F008D448B /* Extensions.swift in Sources */,
 				6364615C26AC9BB2008D448B /* InputContainerView.swift in Sources */,
 				6364615526AC8C83008D448B /* LoginController.swift in Sources */,
