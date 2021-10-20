@@ -10,6 +10,11 @@ import UIKit
 class MessageCell: UICollectionViewCell {
     
     // MARK: Properties
+    
+    var message: Message? {
+        didSet { configure() }
+    }
+    
     private let profileImageView: UIImageView = {
         let iv = UIImageView()
         iv.contentMode = .scaleAspectFill
@@ -25,7 +30,6 @@ class MessageCell: UICollectionViewCell {
         tv.isScrollEnabled = true
         tv.isEditable = false
         tv.textColor = .white
-        tv.text = "text goes here..."
         return tv
     }()
     
@@ -55,6 +59,15 @@ class MessageCell: UICollectionViewCell {
         bubbleContainer.addSubview(textView)
         textView.anchor(top: bubbleContainer.topAnchor, left: bubbleContainer.leftAnchor, bottom: bubbleContainer.bottomAnchor, right: bubbleContainer.rightAnchor, paddingTop: 4, paddingLeft: 12, paddingBottom: 4, paddingRight: 12)
         
+    }
+    
+    func configure() {
+        guard let message = message else { return }
+        let viewModel = MessageViewModel(message: message)
+        
+        bubbleContainer.backgroundColor = viewModel.messageBackgroundColor
+        textView.textColor = viewModel.messageTextColor
+        textView.text = message.text
     }
     
     required init?(coder: NSCoder) {
